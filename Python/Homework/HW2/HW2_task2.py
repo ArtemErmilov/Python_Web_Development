@@ -42,7 +42,6 @@ b2 = int(input('Введите знаменатель второго числа:
 sum_a = a1 * b2 + a2 * b1
 sum_b = b1 * b2
 
-#sum_c, sum_a =  divmod(sum_a,sum_b)
 
 mul_a = a1 * a2
 mul_b = b1 * b2
