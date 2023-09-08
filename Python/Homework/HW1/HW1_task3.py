@@ -21,3 +21,20 @@ else:
 
         elif (num==number-1):
             print(f'Число {number} является простым!')
+
+# Разбор ДЗ1
+
+result = ''
+
+if (number == 1 or number == 2):
+   result = f'Число {number} является простым!'
+elif (not number % 2):
+    result = f'Число {number} является составным!'
+else:
+    for dev in range(3, number//2+1,2):
+        if not number % dev:
+            result = f'Число {number} является составным!'
+            break
+    else:
+        result = f'Число {number} является простым!'
+print(result)

@@ -18,3 +18,22 @@ elif (a == b or a == c or b == c ):
     print ('Треугольник равнобедренный! ')
 else:
     print ('Треугольник разносторонний')
+
+# Решение из разбора
+
+result =''
+
+sides = [a,b,c]
+for side in sides:
+    if side >= (sum(sides) - side):
+        result = 'Треугольника не существует'
+else:
+    t = {a,b,c}
+    if len(t) == 1:
+        result = 'Треугольник равносторонний'
+    elif len(t) == 2:
+        result = 'Треугольник равнобедренный'
+    else:
+        result = 'Треугольник разносторонний'
+        
+print (result)
