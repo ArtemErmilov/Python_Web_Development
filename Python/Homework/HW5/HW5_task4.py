@@ -18,9 +18,9 @@ def fibonacci(number):
             result = 1
             yield result
         else:
-            number_temp_old = copy.copy(result)
+            number_temp_old = result #copy.copy(result)
             result += number_temp
-            number_temp =  copy.copy(number_temp_old)           
+            number_temp = number_temp_old #copy.copy(number_temp_old)           
             
             yield result
 
