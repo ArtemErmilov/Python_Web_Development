@@ -28,6 +28,27 @@ def cont(a,b):
     else:
         return(str(c) + ' ' + str(a) + '/' + str(b))
 
+def cont_new(a,b):
+    """
+    Функция сокращения дроби.
+    a - числитель,
+    b - знаменатель.
+    """
+    c, a =  divmod(a,b) 
+    if (a==0):
+        return str(c)
+    else:
+        dew = a
+        temp = b
+        while temp:
+            dew, temp = temp,dew % temp
+        a = a//dew
+        b = b //dew
+    if (c == 0):
+        return(str(a)+'/'+str(b))
+    else:
+        return(str(c) + ' ' + str(a) + '/' + str(b))
+
 print('Введите 2-а дробных числа в виде "a/b", где a - числитель, b - знаменатель.')
 
 a1 = int(input('Введите числитель первого числа: '))
@@ -46,5 +67,5 @@ sum_b = b1 * b2
 mul_a = a1 * a2
 mul_b = b1 * b2
 
-print (f'Сумма чисел "{a1}/{b1}" и "{a2}/{b2}" равна "{cont(sum_a,sum_b)}"')
-print (f'Произведение чисел "{a1}/{b1}" и "{a2}/{b2}" равна "{cont(mul_a,mul_b)}"')
+print (f'Сумма чисел "{a1}/{b1}" и "{a2}/{b2}" равна "{cont(sum_a,sum_b)},{cont_new(sum_a,sum_b)}",{sum_a= },{sum_b = }')
+print (f'Произведение чисел "{a1}/{b1}" и "{a2}/{b2}" равна "{cont(mul_a,mul_b)}",{cont_new(mul_a,mul_b)}')

@@ -15,25 +15,35 @@ div = 16 # Делитель для нахождения двоичного чи�
 num_hex = '' # Строка вывода для 16-го числа
 
 
+# while num :
+#     num, a = divmod(num,div)
+#     if ( a == 10 ):
+#         b = 'a'
+#     elif (a == 11):
+#         b = 'b'
+#     elif (a == 12):
+#         b = 'c'
+#     elif (a == 13):
+#         b = 'd'
+#     elif (a == 14):
+#         b = 'e'
+#     elif (a == 15):
+#         b = 'f'
+#     else:
+#         b = str (a)    
+
+#     num_hex = b + num_hex
+
+# Решение с разбора
+ALPHA = '0123456789ABCDEF'
+
+result = ''
 while num :
-    num, a = divmod(num,div)
-    if ( a == 10 ):
-        b = 'a'
-    elif (a == 11):
-        b = 'b'
-    elif (a == 12):
-        b = 'c'
-    elif (a == 13):
-        b = 'd'
-    elif (a == 14):
-        b = 'e'
-    elif (a == 15):
-        b = 'f'
-    else:
-        b = str (a)    
+    result = ALPHA[num%div] + result
+    num //=div
 
-    num_hex = b + num_hex
 
-print(f'Перевод числа {NUM_NEW} в hex = {num_hex}. ')
+
+print(f'Перевод числа {NUM_NEW} в hex = {result}. ')
 print(f'Проверка {hex(NUM_NEW)}')
 
