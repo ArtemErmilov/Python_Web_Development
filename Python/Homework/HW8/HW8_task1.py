@@ -102,7 +102,8 @@ print(file_viewer(direct ))
 
 
 
-
+size = os.path.getsize('Python/lecture/Lesson007/one_more_dir/one.txt')
+print(size)
 
   
 
