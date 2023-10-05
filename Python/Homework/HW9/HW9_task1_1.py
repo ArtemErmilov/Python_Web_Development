@@ -31,7 +31,7 @@ def quad_equation (a:int = 0, b:int = 0, c: int = 0):
     a,b,c = decimal.Decimal(a), decimal.Decimal(b),decimal.Decimal(c)
     d2:decimal = b**2-4*a*c
     d:decimal = 0
-    if (d2<0):
+    if (d2<0 or a == 0):
         return None        
     elif(d2 == 0):
         return float(round(decimal.Decimal(-1*b/(2*a)),5))
@@ -47,6 +47,6 @@ def quad_equation (a:int = 0, b:int = 0, c: int = 0):
 
 
 #print(quad_equation(3,2,-10))
-gen_num_ran(-100,100,100,name_file = 'HW9_task1_csv',name_new_direct = 'HW9_task1')
+gen_num_ran(-100,100,1000,name_file = 'HW9_task1_csv',name_new_direct = 'HW9_task1')
 
 quad_equation ()
