@@ -1,5 +1,7 @@
 {
     "python.analysis.extraPaths": [
-        "./Python/Practice/Lesson008"
+        "./Python/Practice/Lesson008",
+        "./Python",
+        "./Python"
     ]
 }
