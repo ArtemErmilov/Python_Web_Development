@@ -52,4 +52,4 @@ def creat_folders_files(chapter:str,lesson:int,task:int):
 
 if __name__ == '__main__':
 
-    creat_folders_files('hw',10,3)
+    creat_folders_files('hw',15,1)

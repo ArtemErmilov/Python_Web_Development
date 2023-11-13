@@ -26,13 +26,13 @@ class MyTriangle:
 
     def get_status(self):
 
-        sides = [a,b,c]
+        sides = [self.side_a, self.side_b,self.side_c]
         for side in sides:
             if side >= (sum(sides) - side):
                 triangle_status = 'Треугольника не существует'
                 break
         else:
-            t = {a,b,c}
+            t = {self.side_a, self.side_b,self.side_c}
             if len(t) == 1:
                 triangle_status = 'Треугольник равносторонний'
             elif len(t) == 2:

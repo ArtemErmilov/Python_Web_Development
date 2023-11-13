@@ -46,19 +46,6 @@ class PathFile:
         """
         self.full_name_file_no_exten = f'{self.get_path_file()}\{self.get_name_file_no_exten()}' 
         return self.full_name_file_no_exten
-    
-    def get_new_folder_full_name_file_new_exten(self,exten:str ):
-
-        """
-        Создаётся новая папка, и возвращается полный путь к файлу с новым расширением и новой папкой. 
-        """
-      
-        if (self.get_name_file_no_exten() not in os.listdir(self.path_file)):
-            os.mkdir(self.get_full_name_file_no_exten())
-        
-        self.new_folder_full_name_file_new_exten = f'{self.get_full_name_file_no_exten()}\{self.get_name_file_no_exten()}.{exten}'
-
-        return self.new_folder_full_name_file_new_exten
 
 
 

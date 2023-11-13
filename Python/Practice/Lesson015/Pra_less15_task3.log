@@ -1,0 +1,6 @@
+INFO                 - 2023-11-08 15:33:02,302 -wrapper - result:Pervi_Vtoroi, args:('Pervi', 'Vtoroi')
+INFO                 - 2023-11-08 15:33:02,303 -wrapper - result:Pervi_Vtoroi, args:('Pervi',), kwargs: {'b': 'Vtoroi'}
+INFO                 - 2023-11-08 15:33:02,303 -wrapper - result:Pervi_Vtoroi, kwargs: {'a': 'Pervi', 'b': 'Vtoroi'}
+INFO                 - 2023-11-08 15:35:13,070 -wrapper - result:Pervi_Vtoroi, args:('Pervi', 'Vtoroi')
+INFO                 - 2023-11-08 15:35:13,070 -wrapper - result:Pervi_Vtoroi, args:('Pervi',), kwargs: {'b': 'Vtoroi'}
+INFO                 - 2023-11-08 15:35:13,070 -wrapper - result:Pervi_Vtoroi, kwargs: {'a': 'Pervi', 'b': 'Vtoroi'}
